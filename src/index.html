@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map Demo</title>
+    <link href="./index.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFi0_1nuT28A-qp4Ec4LInp8p3D0zpl3I&callback=initMap&libraries=places,marker&v=weekly" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="inputs">
+        <div id="from" class="from">
+            <span>Enter a starting location:</span>
+            <input
+                id="from-input"
+                class="controls"
+                type="text"
+                placeholder="Start Location"
+        />
+        </div>
+        <div id="to" class="to">
+            <span>Enter an end location:</span>
+            <input
+                    id="to-input"
+                    class="controls"
+                    type="text"
+                    placeholder="End Location"
+            />
+        </div>
+    </div>
+    <div class="map">
+        <div id="map-container" class="map-container"></div>
+    </div>
+</div>
+
+</body>
+</html>
